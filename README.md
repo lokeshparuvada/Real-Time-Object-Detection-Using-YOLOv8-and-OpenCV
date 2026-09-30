@@ -1,47 +1,54 @@
-# VisionGuard
+<div align="center">
 
-Real-Time Object Detection Using YOLOv8 and OpenCV.
+# 👁️ VisionGuard
 
-## Overview
+### Real-Time Object Detection using YOLOv8 and OpenCV
 
-This project uses the YOLOv8 object detection model and OpenCV to detect objects from a webcam in real time.
+A real-time computer vision application that detects objects from a webcam using YOLOv8 and OpenCV.
 
-## Features
+</div>
 
-- Real-time object detection
-- Webcam integration
-- Bounding box visualization
-- Object name display
-- YOLOv8-powered inference
+---
 
-## Technologies Used
+## 📖 Overview
 
-- Python
-- OpenCV
-- Ultralytics YOLOv8
+VisionGuard detects objects from your webcam in real time.
 
-## Installation
+It uses the pretrained **YOLOv8n (Nano)** model from Ultralytics for object detection and **OpenCV** for webcam capture, video processing, and displaying detection results.
 
-```bash
-pip install ultralytics opencv-python
-```
+The pretrained model can recognize the **80 object classes from the COCO dataset**, including people, phones, laptops, bottles, chairs, and many other common objects.
 
-## Run the Project
+---
 
-```bash
-python main.py
-```
+## ✨ Features
 
-## Project Structure
+- ⚡ Real-time object detection
+- 📷 Live webcam integration
+- 🔲 Bounding box visualization
+- 🏷️ Object name labels with confidence scores
+- 🖥️ Console output of detected objects
+- 🪶 Lightweight YOLOv8 Nano model
+- 💻 Runs on a normal laptop CPU
+
+---
+
+## 🛠️ Tech Stack
+
+| Purpose | Technology |
+|---|---|
+| Programming Language | Python |
+| Object Detection | Ultralytics YOLOv8 |
+| Video Processing | OpenCV |
+| Detection Model | YOLOv8n |
+
+---
+
+## 📁 Project Structure
 
 ```text
-Detection_System/
+Real-Time-Object-Detection-Using-YOLOv8-and-OpenCV/
 │
-├── main.py
-├── yolov8n.pt
-└── README.md
-```
-
-## Author
-
-Lokesh Paruvada
+├── main.py          # Webcam capture and detection loop
+├── yolov8n.pt       # Pretrained YOLOv8 Nano model
+├── .gitignore       # Git ignored files
+└── README.md        # Project documentation
